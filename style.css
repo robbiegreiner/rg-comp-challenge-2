@@ -8,7 +8,7 @@ body{
 
 header{
   background-color: #2B2B2B;
-  height: 100px;
+  height: 130px;
   width: 100%;
   color: white;
   /*display: flex;
@@ -19,17 +19,13 @@ header{
 }
 
 nav{
-  font-size: 110%;
+  font-size: 125%;
   width: 60%;
   color: #FCD720;
   text-shadow: 1px 1px black;
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 1.5%;
-}
-
-a{
-
 }
 
 h2{
@@ -71,21 +67,47 @@ img{
 
 .logo{
   height: 60px;
-  width: 141px;
-  float: right;
-  margin-top: 35px;
-  margin-right: 1.5%;
+  width: 144px;
+  position: absolute;
+  top: 55px;
+  right: 1.5%;
 }
 
 .icon{
   height: 20px;
   width: 20px;
   margin-right: 15px;
-  margin-left: 15px;
+  margin-left: 30px;
+}
+
+.user-icon{
+  height: 25px;
+  width: 25px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.user-icon-down{
+  height: 20px;
+  width: 15px;
+  float: right;
+  margin-right: 1.5%;
+  margin-top: 14px;
+}
+
+.top-right-text{
+  float: right;
+  display: inline;
+  margin-right: 10px;
+  margin-top: 16px;
+  color: #27B5FE;
+  font-size: 80%;
 }
 
 .soup-icon{
   margin-right: 15px;
+  margin-left: 0;
 }
 
 .date{
@@ -135,9 +157,16 @@ h4{
   margin-bottom: 5px;
 }
 
-@media (max-height: 750px){
+@media (max-width: 1100px){
   .people-box{
-    height: 60vh;
+    width: 32%;
+  }
+  .primary-container{
+    justify-content: flex-start;
+    margin-left: 1.5%;
+  }
+  .people-box{
+    margin-right: 1%;
   }
 
 }
