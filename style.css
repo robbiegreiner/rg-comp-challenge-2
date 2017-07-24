@@ -2,26 +2,22 @@ body{
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #BDBDBD;
+  background-color: #3F88C5;
   font-family: 'Roboto', sans-serif;
 }
 
 header{
-  background-color: #2B2B2B;
+  background-color: #30323D;
   height: 130px;
   width: 100%;
   color: white;
-  /*display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;*/
   border-bottom: 2px solid #FCD720;
 }
 
 nav{
   font-size: 125%;
-  width: 60%;
-  color: #FCD720;
+  width: 70%;
+  color: #E8C547;
   text-shadow: 1px 1px black;
   display: inline-block;
   margin-top: 80px;
@@ -32,7 +28,7 @@ h2{
   margin-left: 1.5%;
   font-weight: 400;
   font-size: 200%;
-  color: #FCD720;
+  color: #E8C547;
   text-shadow: 1px 1px black;
 }
 
@@ -50,7 +46,7 @@ h2{
   height: 470px;
   min-height: 400px;
   width: 24%;
-  border: 0px solid black;
+  border: 0px solid #E8C547;
   margin-bottom: 10px;
   box-shadow: 1px 1px 1px 1px #888888;
 }
@@ -63,6 +59,38 @@ h2{
 img{
   width: 100%;
   height: 100%;
+}
+
+.arrow-container{
+  width: 100%;
+  height: 40%;
+  position: relative;
+  bottom: 98%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  background-color: #FCD720;
+  border-radius: 100%;
+  margin-left: 3%;
+}
+
+h6{
+  color: #FCD720;
+  text-align: center;
+  font-size: 100%;
+  font-weight: 400;
+  margin: 0;
+  margin-right: 3%;
+  text-shadow: 2px 2px black;
+}
+
+.big-number{
+  font-size: 250%;
 }
 
 .logo{
@@ -101,7 +129,7 @@ img{
   display: inline;
   margin-right: 10px;
   margin-top: 16px;
-  color: #27B5FE;
+  color: #3F88C5;
   font-size: 80%;
 }
 
@@ -134,6 +162,7 @@ h4{
 .blue{
   color: #23B7FD;
   font-size: 100%;
+  align-self: flex-start;
 }
 
 .box-bottom{
@@ -143,7 +172,7 @@ h4{
   justify-content: flex-start;
   width: 100%;
   height: 50%;
-  background-color: #FFFFFF;
+  background-color: #EFEFEF;
   border-top: 0px solid #FCD720;
   font-weight: 400;
 }
@@ -151,7 +180,7 @@ h4{
 .link-box{
   width: 90%;
   height: 60px;
-  background-color: #EFEFEF;
+  background-color: lightgray;
   margin-left: 5%;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -169,4 +198,81 @@ h4{
     margin-right: 1%;
   }
 
+}
+
+@media (max-width: 850px){
+  .people-box{
+    width: 49%;
+  }
+}
+
+@media (max-width: 700px){
+  nav{
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 620px){
+  .people-box{
+    width: 75%;
+    height: 375px;
+    min-height: 350px;
+    margin-bottom: 30px;
+    margin-left: 12%;
+  }
+
+  .top-right-text{
+    display: none;
+  }
+
+  .logo{
+    height: 60px;
+    width: 144px;
+    position: absolute;
+    left:35%;
+    top: 20px;
+  }
+
+  .icon{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  nav{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    font-size: 90%;
+  }
+
+  .user-icon{
+    width: 15px;
+    height: 15px;
+  }
+
+  .user-icon-down{
+    margin-top: 7px;
+  }
+
+  h2{
+    margin: 0;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 150%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px){
+  .logo{
+    left: 25%;
+  }
+  .people-box{
+    width: 98%;
+    margin-left: 0;
+  }
 }
